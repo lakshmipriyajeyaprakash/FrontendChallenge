@@ -1,0 +1,119 @@
+body{
+    background-color:aliceblue;
+}
+ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ';
+    font-size: 20px;
+    font-weight:lighter;
+}
+#city1.clicked{
+    color:lightseagreen;
+}
+#city2.clicked{
+    color:lightseagreen;
+}
+#city3.clicked{
+    color:lightseagreen;
+}
+.grid-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.box-container{
+    border: 4px solid white;
+    height: fit-content;
+    width: fit-content;
+    border-radius:8px;
+    display:grid;
+    grid-template-rows: 55% 45%;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.outer-box{
+    border: 4px solid white;
+    border-left:none;
+    border-right: none;
+    border-top: none;
+    padding-top: 3px;
+    height:150px;
+}
+.segment{
+    display:flex;
+    justify-content: space-evenly;
+}
+.flex-1{
+    display:flex;
+    justify-content: center;
+    padding: 3px;
+}
+.flex-2{
+    display:flex;
+    justify-content: center;
+    padding: 3px;
+}
+.flex-3{
+    display:flex;
+    justify-content: center;
+    padding: 3px;
+}
+.temp{
+    display: flex;
+    font-size: 18px;
+    padding: 3px;
+}
+.climate,.day{
+    font-size: 20px;
+    padding: 3px;
+}
+.Daydiv{
+    border: 2px solid white;
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 3px;
+}
+.font{
+    font-size: 30px;
+}
+#imagecloud{
+    height:50px;
+    width:60px;
+}
+@media (min-width: 0px) and (max-width: 400px) {
+    ul{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 0px) and (max-width: 400px) {
+    .segment{
+        display:grid;
+        grid-template-columns: repeat();
+        justify-content: center;
+    }
+    .box-container{
+        display:grid;
+        grid-template-rows: 15% 85%;
+        justify-content: center;
+    }
+    .Daydiv{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        border: 2px solid white;
+        border-top:none;
+        border-right:none;
+        border-left:none;
+        width:120px;
+    }
+    
+}
+

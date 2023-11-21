@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link href="weatherstyle.css" rel="Stylesheet">
+    <link rel="icon" type="image/x-icon" href="../weatherIcons/sunny.png">
+</head>
+<body>
+    <section class="Page1">
+        <main>
+            <div class="header">
+                <ul class="citylist" onclick="myClick(event)">
+                    <li id="city1" class="cities">OTTAWA</li>
+                    <li id="city2" class="cities">MOSCOW</li>
+                    <li id="city3" class="cities" >TOKYO</li>
+                </ul>
+            
+            <Container>
+                <div class="grid-container">
+                    <div></div>
+                    <div class="box-container">
+                        <div class="outer-box">
+                            <div class="flex-space">
+                                <div><p></p></div>
+                            </div>
+                            <div class="flex-1">
+                                <div class="Day font"></div>
+                            </div>
+                            <div class="flex-2">
+                                <div class="weathericon"><img id="imagecloud" src="../weatherIcons/cloudy.png" alt="NoImage"></img></div>
+                                <div class="inner-flex">
+                                    <div class="temp font">22&deg;</div>
+                                    <div class="climate font">cloudy</div>
+                                </div>
+                            </div>
+                            <div class="flex-space">
+                               <div><p></p></div> 
+                            </div>
+                        </div>
+                        <div class="segment">
+                            <div class="Daydiv Day0">
+                                <div class="Day">Mon</div>
+                                <div class="Weather-icon"><img src="../weatherIcons/cloudy.png" alt="NoImage"></img></div>
+                                <div class="temp">22&deg;</div>
+                            </div>
+                            <div class="Daydiv Day1">
+                                <div class="Day">Tue</div>
+                                <div class="Weather-icon"><img src="../weatherIcons/sunny.png" alt="NoImage"></img></div>
+                                <div class="temp">24&deg;</div>
+                            </div>
+                            <div class="Daydiv Day2">
+                                <div class="Day">Wed</div>
+                                <div class="Weather-icon"><img src="../weatherIcons/cloudy.png" alt="NoImage"></img></div>
+                                <div class="temp">15&deg;</div>
+                            </div>
+                            <div class="Daydiv Day3">
+                                <div class="Day">Thurs</div>
+                                <div class="Weather-icon"><img src="../weatherIcons/sunny.png" alt="NoImage"></img></div>
+                                <div class="temp">10&deg;</div>
+                            </div>
+                            <div class="Daydiv Day4">
+                                <div class="Day">Fri</div>
+                                <div class="Weather-icon"><img src="../weatherIcons/cloudy.png" alt="NoImage"></img></div>
+                                <div class="temp">10&deg;</div>
+                            </div>
+                            <div class="Daydiv Day5">
+                                <div class="Day">Sat</div>
+                                <div class="Weather-icon"><img src="../weatherIcons/sunny.png" alt="NoImage"></img></div>
+                                <div class="temp">10&deg;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </Container>
+        </main>
+    </section>
+    <script src="weather.js"></script>
+</body>
+</html>
